@@ -25,12 +25,10 @@ Actions:
         - WorkflowSource # This specifies that the action requires this Workflow as a source
     Compute:
       Type: EC2
-      Fleet: Linux.x86-64.Large
     Configuration:
       Wait: true
       AWSRegion: ap-northeast-1
-      AppStackName: sample-nextjs-amplify
-      AppId: sample-nextjs-amplify
+      AppId: dvg9e8zp8ynfa
       CreateBranch: true
       AmplifyBranchName: ${WorkflowSource.BranchName}
       Path: .
